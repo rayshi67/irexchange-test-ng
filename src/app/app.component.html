@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+</div>
+<div>
+  <div>
+    <h3>Number of Children</h3>
+    <input #numOfChildren
+      (keyup.enter)="setNumberOfChildren(numOfChildren.value)"
+      (blur)="setNumberOfChildren(numOfChildren.value)">
+  </div>
+  <div>
+    <h3>Number of Count</h3>
+    <input #numOfCount
+      (keyup.enter)="setNumberOfCount(numOfCount.value)"
+      (blur)="setNumberOfCount(numOfCount.value)">
+  </div>
+  <div style="margin-top: 40px">
+    <button style="font-size: 20px" (click)="process()">Run</button>
+  </div>
+  <div style="margin-top: 40px">
+    <h3>The order of children removed:</h3>
+    <div>{{removalList}}</div>   
+  </div>
+  <div style="margin-top: 20px">
+    <h3>The winning child:</h3>
+    <div>{{winningChild}}</div>   
+  </div>
+  <div style="margin-top: 20px"></div>
+</div>
+
